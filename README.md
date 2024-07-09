@@ -77,8 +77,7 @@ Heroku Python Support
 ## Contributing
 We welcome contributions! Please fork the repository and submit a pull request with your improvements.
 
-## License
-This project is licensed under the MIT License. See the LICENSE file in the repository for more information
+
 
 
 
