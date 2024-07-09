@@ -1,44 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book List</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-        }
-        h1 {
-            color: #333;
-        }
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-        li {
-            margin: 10px 0;
-            padding: 10px;
-            background-color: #f8f8f8;
-            border: 1px solid #ddd;
-        }
-        a {
-            text-decoration: none;
-            color: darkblue;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-    <h1>Book List</h1>
-    <ul>
-        {% for book in books %}
-        <li>
-            <a href="{{ url_for('book_details', book_id=book['key'].split('/')[-1]) }}">
-                {{ book['title'] }}
-            </a> by {{ book['author_name'][0] }}, {{ book['first_publish_year'] }}
-        </li>
-        {% endfor %}
-    </ul>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Book List</h1>
+        <div class="row">
+            {% for book in books %}
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="{{ book.cover_url }}" class="card-img-top" alt="Cover of {{ book.title }}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ book.title }}</h5>
+                        <p class="card-text">Author: {{ book.author_name[0] }}</p>
+                        <p class="card-text">Year: {{ book.first_publish_year }}</p>
+                        <a href="{{ url_for('book_details', book_id=book.key.split('/')[-1]) }}" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
 </body>
 </html>
+
+

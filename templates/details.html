@@ -1,15 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Details</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-    <h1>{{ book['title'] }}</h1>
-    <p><strong>Author:</strong> {{ book['authors'][0]['name'] }}</p>
-    <p><strong>Publish Year:</strong> {{ book.get('publish_date', 'N/A') }}</p>
-    <p><strong>Number of Pages:</strong> {{ book.get('number_of_pages', 'N/A') }}</p>
-    <p><strong>Publishers:</strong> {% for publisher in book['publishers'] %}{{ publisher['name'] }}{% if not loop.last %}, {% endif %}{% endfor %}</p>
-    <p><strong>ISBN:</strong> {{ book.get('isbn_10', ['N/A'])[0] }}</p>
-    <a href="/">Go Back</a>
+    <div class="container mt-5">
+        <h1>{{ book.title }}</h1>
+        <div class="card mb-3">
+            <img src="{{ book.cover_url }}" class="card-img-top" alt="Cover of {{ book.title }}">
+            <div class="card-body">
+                <h5 class="card-title">{{ book.title }}</h5>
+                <p class="card-text"><strong>Author:</strong> {{ book.authors[0].name }}</p>
+                <p class="card-text"><strong>Publish Year:</strong> {{ book.publish_date }}</p>
+                <p class="card-text"><strong>Number of Pages:</strong> {{ book.number_of_pages }}</p>
+                <p class="card-text"><strong>Publishers:</strong>
+                    {% for publisher in book.publishers %}
+                    {{ publisher.name }}{% if not loop.last %}, {% endif %}
+                    {% endfor %}
+                </p>
+                <p class="card-text"><strong>ISBN:</strong> {{ book.isbn_10[0] if book.isbn_10 else 'N/A' }}</p>
+                <a href="/" class="btn btn-primary">Go Back</a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
+
