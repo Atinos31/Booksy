@@ -1,6 +1,6 @@
 Booksy: A Flask Application
 Introduction
-Booksy is a Flask-based web application that displays a list of ten books fetched from the Open Library API. This application demonstrates basic Flask functionality such as routing, template rendering, and making API calls. Visit the live site: Booksy Live.
+Booksy is a Flask-based web application that displays a list of ten books fetched from the Open Library API. This application demonstrates basic Flask functionality such as routing, template rendering, and making API calls. Visit the live site: https://booksy-e420566edb07.herokuapp.com/.
 
 Features
 List Display: Shows a list of the first ten books based on a predefined query from the Open Library API.
