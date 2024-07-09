@@ -1,8 +1,9 @@
-Booksy: A Flask Application
-Introduction
-Booksy is a Flask-based web application that displays a list of ten books fetched from the Open Library API. This application demonstrates basic Flask functionality such as routing, template rendering, and making API calls. Visit the live site: https://booksy-e420566edb07.herokuapp.com/.
+# Booksy: A Flask Application
+## Introduction
+Booksy is a Flask-based web application that displays a list of ten books fetched from the Open Library API. This application demonstrates basic Flask functionality such as routing, template rendering, and making API calls. 
+Visit the live site: https://booksy-e420566edb07.herokuapp.com/.
 
-Features
+# Features
 
 List Display: Shows a list of the first ten books based on a predefined query from the Open Library API.
 Book Details: Each book title is clickable and leads to a detailed view of the book.
@@ -45,7 +46,7 @@ Run the application on your local machine with the following command:
 python app.py
 This starts a local server. Access the application by navigating to http://localhost:5000 in your web browser.
 
-Deploying to Heroku
+# Deploying to Heroku
 Prepare the App for Deployment
 Ensure your app is ready for Heroku deployment by confirming the presence of the following files:
 
@@ -56,7 +57,7 @@ requirements.txt: Lists all your app’s dependencies.
 
 runtime.txt (optional): Specifies the Python version to use.
 
-Deploying
+## Deploying
 Deploy your application to Heroku with these steps:
 
 
@@ -73,10 +74,10 @@ Flask Documentation
 Heroku Python Support
 
 
-Contributing
+## Contributing
 We welcome contributions! Please fork the repository and submit a pull request with your improvements.
 
-License
+## License
 This project is licensed under the MIT License. See the LICENSE file in the repository for more information
 
 
