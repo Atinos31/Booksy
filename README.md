@@ -20,13 +20,15 @@ First, clone the repository to your local machine:
 git clone https://github.com/Atinos31/Booksy.git
 cd Booksy
 Set Up a Virtual Environment
-Setting up a virtual environment is recommended to manage dependencies:
+Setting up a virtual environment is recommended to manage dependencies by running the commands below in your terminal:
 
+#### Create a virtual environment
+python3 -m venv venv 
+ #### Activate the virtual environment on macOS/Linux
+source venv/bin/activate
+#### For Windows use: 
+venv\Scripts\activate
 
-python3 -m venv venv  # Create a virtual environment
-source venv/bin/activate  # Activate the virtual environment on macOS/Linux
-
-# For Windows use: venv\Scripts\activate
 ### Install Dependencies
 ###### Install all required packages using pip:
 
