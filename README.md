@@ -15,29 +15,26 @@ Installation
 Clone the Repository
 First, clone the repository to your local machine:
 
-bash
-Copy code
+
 git clone https://github.com/Atinos31/Booksy.git
 cd Booksy
 Set Up a Virtual Environment
 Setting up a virtual environment is recommended to manage dependencies:
 
-bash
-Copy code
+
 python3 -m venv venv  # Create a virtual environment
 source venv/bin/activate  # Activate the virtual environment on macOS/Linux
-# For Windows use: venv\Scripts\activate
-Install Dependencies
-Install all required packages using pip:
 
-bash
-Copy code
+# For Windows use: venv\Scripts\activate
+### Install Dependencies
+###### Install all required packages using pip:
+
+
 pip install -r requirements.txt
 Running the Application
 To run the application, execute:
 
-bash
-Copy code
+
 python app.py
 This command starts a local server. You can access the application by navigating to http://localhost:5000 in your web browser.
 
