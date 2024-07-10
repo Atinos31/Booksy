@@ -34,9 +34,7 @@ venv\Scripts\activate
 
 
 pip install -r requirements.txt
-Running the Application
-To run the application, execute:
-
+#### Running the Application  - To run the application, execute:
 
 python app.py
 This command starts a local server. You can access the application by navigating to http://localhost:5000 in your web browser.
