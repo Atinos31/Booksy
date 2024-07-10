@@ -38,21 +38,21 @@ To run the application, execute:
 python app.py
 This command starts a local server. You can access the application by navigating to http://localhost:5000 in your web browser.
 
-Application Structure
-app.py: The main Python file with Flask routes.
-templates/: This directory contains HTML files for the application.
-index.html: Displays the list of books.
-details.html: Displays detailed information about a specific book.
-Usage
+### Application Structure
+##### app.py: The main Python file with Flask routes.
+##### templates/: This directory contains HTML files for the application.
+#### index.html: Displays the list of books.
+#### details.html: Displays detailed information about a specific book.
+Usage.
 Upon launching the application, you will see a list of books on the homepage. Each book's title is a hyperlink. Clicking on a title will take you to a page displaying more detailed information about the book.
 
-Additional Information
+##### Additional Information
 For more details about the APIs used and the Flask framework, you can refer to:
 
-Open Library API Documentation
-Flask Documentation
-Contributing
-Contributions to this project are welcome! Please fork the repository and submit a pull request with your improvements.
+#### Open Library API Documentation
+#### Flask Documentation
+#### Contributing
+#### Contributions to this project are welcome! Please fork the repository and submit a pull request with your improvements.
 
 License
 This project is licensed under the MIT License. See the LICENSE file in the repository for more information.
